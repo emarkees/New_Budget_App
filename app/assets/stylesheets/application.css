@@ -87,3 +87,12 @@ h5,
 h6 {
   text-decoration: none;
 }
+
+.fixed-height-container {
+  height: 300px; /* Adjust the height as needed */
+  overflow-y: auto; /* Add scrollbars if content overflows */
+}
+
+.transactionz {
+  height: 500px;
+}

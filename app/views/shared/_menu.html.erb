@@ -1,39 +1,30 @@
 <main class="container bg-black main-cont">
-<nav class="navbar navbar-expand-lg navbar-light m-0 p-0">
-<div class="container nav">
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarNav"
-    aria-controls="navbarNav"
-    aria-expanded="false"
-    aria-label="Toggle navigation"
-  >
+  <nav class="navbar navbar-expand-lg navbar-light bg-bala-blue m-0 p-0">
+    <div class="container nav">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
-  </button>
-  <h3 class="navbar-brand text-white" ><%= @page_name %></h3>  
-  <a href="javascript:history.back();" class="back-arrow">
-    <i class="fas fa-arrow-left"></i>
-  </a>
+</button>
   
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ml-auto">
-      <!-- Add your navigation links here -->
-      <li class="nav-item">
-        <a class="nav-link" href="#">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Services</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
-      </li>
-    </ul>
-  </div>
-</div>
-</nav>
+      <h3 class="navbar-brand text-white"><%= @page_name %></h3>
+      <a href="javascript:history.back();" class="back-arrow d-lg-none">
+        <i class="fas fa-arrow-left"></i>
+      </a>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- Add Font Awesome avatar image -->
+        <i class="fas fa-user-circle fa-2x text-primary"></i>
+        <%= user.name %>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+                <%= link_to "Update account", edit_user_registration_path, class: 'nav-link' %>
+            </li>
+            <li class="nav-item">
+                <%= button_to "Sign out", destroy_user_session_path, :method => :delete, class: "nav-link" %>
+            </li>
+        </ul>
+    </div>
+      </div>
+    </div>
+  </nav>
 </main>

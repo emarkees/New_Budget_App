@@ -10,11 +10,12 @@ gem "turbo-rails"
 gem "stimulus-rails"
 gem "jbuilder"
 gem 'devise'
-gem 'font-awesome-sass', '~> 5.15.3'
+gem 'font-awesome-sass', '~> 5.15.1'
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem 'rspec-rails'
 end
 
 group :development do

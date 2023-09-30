@@ -4,7 +4,7 @@ class TransactionsController < ApplicationController
 
   # GET /transactions or /transactions.json
   def index
-    @category = Category.find(params[:category_id])
+    @category = Category.find_by(id: params[:category_id])
     @transactions = @category.transactions.order(created_at: :desc)
     @total_amount = @transactions.sum(:amount)
     @page_name = "Transactions"
@@ -18,6 +18,7 @@ class TransactionsController < ApplicationController
   # GET /transactions/new
   def new
     @transaction = Transaction.new
+    @categories = Category.all
   end
 
   # GET /transactions/1/edit

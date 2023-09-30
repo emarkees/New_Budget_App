@@ -6,19 +6,8 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
 
-  ROLES = %w[admin user editor].freeze
+         validates_presence_of :password
+         validates_presence_of :name
 
-  validates :role, inclusion: { in: ROLES }
 
-  def admin?
-    role == 'admin'
-  end
-
-  def user?
-    role == 'user'
-  end
-
-  def editor?
-    role == 'editor'
-  end
 end
