@@ -15,8 +15,6 @@
  */
  /* app/assets/stylesheets/application.css */
   
-  *= require bootstrap,
-  
 
 
     /* application.scss */
@@ -26,9 +24,8 @@
  /* Custom CSS for the navbar */
  body .main-cont {
     width: 100%;
-  background-color: #0d6efd !important;
+  background-color: #3778c2 !important;
 }
-
 
 .navbar-toggler-icon {
   background-color: #fff; /* Hamburger button color */
@@ -40,7 +37,6 @@
 
 
 .back-arrow {
-  color: #007bff; /* Set the color to blue */
   font-size: 24px; /* Set the font size */
   margin-right: 8px; /* Add margin to separate it from the text */
 }
@@ -51,7 +47,7 @@ body {
 }
     /* Add this to your CSS */
 .category-list {
-  max-height: 400px; /* Adjust the height as needed */
+  max-height: 450px; /* Adjust the height as needed */
   overflow-y: auto;
   color: #fcfdfe;
 }
@@ -89,7 +85,7 @@ h6 {
 }
 
 .fixed-height-container {
-  height: 300px; /* Adjust the height as needed */
+  height: 400px; /* Adjust the height as needed */
   overflow-y: auto; /* Add scrollbars if content overflows */
 }
 
@@ -106,14 +102,15 @@ h6 {
     position: fixed;
     top: 0;
     left: 0;
-    background: #339bcf;
+    background: #3778c2;
     width: 75%;
     height: 100%;
     z-index: 999
   }
 
   .nav {
-    background: #339bcf;
+    height: 5rem;
+    background: #3778c2;
     width: 100%;
   }
 
@@ -148,3 +145,85 @@ h6 {
     cursor: pointer;
     z-index: 999;
   }
+
+
+
+  /* @media only screen and (min-width: 600px) {
+    
+    body {
+      height: 100%;
+    }
+    .navbar-nav {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      background: #21985f;
+      height: auto;
+      z-index: 999;
+      width: 100%;
+    }
+
+    #navbarNav {
+      display: flex;
+      flex-direction: row;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 20%;
+    }
+
+    .nav-item {
+      display: flex;
+      width: auto;
+    }
+
+    .overlay {
+      display: none;
+    
+    }
+
+    #navbar-toggler-button {
+      display: none;
+    }
+
+    .item-nav {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      margin: 0;
+      padding: 0;
+    }
+
+  
+
+    .category-list {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-height: 400px; /* Adjust the height as needed 
+    
+
+    .avatar-img {
+      width: 1rem;
+
+    }
+
+    .avatar {
+      display: flex;
+      flex-direction: column;
+      width: auto;
+    }
+
+    .row-avata {
+      width: 100%;
+      flex-direction: row;
+    }
+
+    .fa-user-circle {
+      size: 2rem;
+    }
+
+  } */

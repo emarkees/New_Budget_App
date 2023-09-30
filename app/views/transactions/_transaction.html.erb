@@ -1,9 +1,9 @@
 <div id="<%= dom_id transaction %>">
   
 
-<div  class="container mt-2">
+<div  class="container mt-2 transactionz">
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-12">
       <div class="category-list">
           <div class="col-md-4 mb-2">
             <div class="card category-card p-1">
@@ -34,7 +34,15 @@
 
 </div>
 
-
+<div class="d-flex container-fluid fixed-bottom">
+  <div class="d-flex col justify-content-center align-items-center">
+    <div class="col-md-1 mb-2 justify-content-center align-items-center fixed-bottom">
+      <%= link_to new_transaction_path, class: 'btn btn-success text-white btn-block w-100 p-2' do %>
+        New Transaction
+      <% end %>
+    </div>
+  </div>
+</div>
 
 
 
