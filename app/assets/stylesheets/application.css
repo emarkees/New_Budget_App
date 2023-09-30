@@ -200,8 +200,6 @@ nav {
       padding: 0;
     }
 
-
-
     .category-list {
       display: flex;
       flex-direction: column;
@@ -211,7 +209,6 @@ nav {
 
     .avatar-img {
       width: 1rem;
-
     }
 
     .avatar {
