@@ -13,3 +13,77 @@
  *= require_tree .
  *= require_self
  */
+ /* app/assets/stylesheets/application.css */
+  
+  *= require bootstrap,
+  
+
+
+    /* application.scss */
+  @import "font-awesome-sprockets";
+  @import "font-awesome";
+
+ /* Custom CSS for the navbar */
+ body .main-cont {
+  height: 75px;
+  background-color: #0d6efd !important;
+}
+
+
+.navbar-toggler-icon {
+  background-color: #fff; /* Hamburger button color */
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  background-color: transparent; /* Change color when the menu is open */
+}
+
+
+.back-arrow {
+  color: #007bff; /* Set the color to blue */
+  font-size: 24px; /* Set the font size */
+  margin-right: 8px; /* Add margin to separate it from the text */
+}
+
+/* Add this to your application.css or application.scss file */
+body {
+  background-color: #f2f2f2; /* Light gray background color */
+}
+    /* Add this to your CSS */
+.category-list {
+  max-height: 400px; /* Adjust the height as needed */
+  overflow-y: auto;
+  color: #fcfdfe;
+}
+
+/* Add this to your application.css or application.scss file */
+.category-card {
+  background-color: #fff; /* White background color */
+  border-radius: 10px; /* Rounded corners */
+  padding: 15px; /* Add padding to the card content */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+}
+
+.category-name {
+  color: gray !important; /* Set the link color to gray */
+}
+
+.category-amount {
+  color: #000;
+}
+
+/* Optional: Add hover effect when users hover over the cards */
+.category-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-decoration: none;
+}

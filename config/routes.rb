@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :transactions
+  resources :categories, only: [:index, :new, :create]
   devise_for :users
   get 'home/index'
   root "home#index"
@@ -6,4 +8,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  resources :categories do
+    resources :transactions
+  end
 end

@@ -1,0 +1,14 @@
+<div id="<%= dom_id transaction %>">
+    <%= link_to transaction_path(transaction), class: "card-link" do %>
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title"><%= transaction.name %></h5>
+          <p class="card-text">Amount: <%= transaction.amount %></p>
+          <p class="card-text">Date: <%= transaction.created_at.strftime('%d, %b %Y') %></p>
+          <p class="card-text">
+            <i class="fas fa-folder"></i> <%= transaction.category.name if transaction.category %>
+          </p>
+        </div>
+      </div>
+  <% end %>
+</div>
