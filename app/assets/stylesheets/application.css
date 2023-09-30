@@ -205,8 +205,8 @@ nav {
       flex-direction: column;
       width: 100%;
       max-height: 400px; /* Adjust the height as needed
-
-
+    }
+    
     .avatar-img {
       width: 1rem;
     }
