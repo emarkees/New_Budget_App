@@ -7,7 +7,8 @@
     overlay.classList.toggle('menu-expanded');
   });
 
-  document.getElementById('close-icon').addEventListener('click', () => {
+  document.getElementById('navbarNav').addEventListener('click', () => {
+    navbarNav.classList.toggle('show');
     const overlay = document.getElementById('overlay');
     overlay.classList.remove('menu-expanded');
   });

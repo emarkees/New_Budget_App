@@ -5,7 +5,7 @@ RSpec.describe Transaction, type: :model do
   let(:category) { Category.create(name: 'Mc Donald') }
 
   subject do
-    Transaction.create(user: user, name: 'Ice cream', amount: 24, category_id: category.id)
+    Transaction.create(user:, name: 'Ice cream', amount: 24, category_id: category.id)
   end
 
   context '#validation' do
@@ -42,7 +42,5 @@ RSpec.describe Transaction, type: :model do
     it 'should confirm user name' do
       expect(subject.user.name).to eq('Sammed')
     end
-
-    
   end
 end

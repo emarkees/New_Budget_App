@@ -1,7 +1,6 @@
 <div id="<%= dom_id transaction %>">
-  
 
-<div  class="container mt-2 transactionz">
+<div  class="container mt-2 transactionz stick">
   <div class="row">
     <div class="col-md-12">
       <div class="category-list">
@@ -10,7 +9,11 @@
               <div class="col-md-6 category-item p-2">
               <%= link_to transaction_path(transaction), class: "card-link" do %>
                 <div class="d-flex col-md-3 justify-content-between">
-                    <div class="col-md-2 w-3">
+                    <div class="row-md-2 w-3">
+                    <div class="3">
+                      <!-- Use Font Awesome for custom icon -->
+                      <i class="fas fa-user-graduate fa-3x"></i>
+                    </div>
                       <p>
                       <%= transaction.category.name if transaction.category %>
                       </i></p>
@@ -22,6 +25,7 @@
                     <div class="col-md-6 category-amount">
                       <h5><%= number_to_currency(transaction.amount) %></h5>
                     </div>
+                    
                   </div>
                 <% end %>
               </div>

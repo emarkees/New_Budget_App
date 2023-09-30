@@ -7,8 +7,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
 
-         validates_presence_of :password
-         validates_presence_of :name
-
-
+  validates_presence_of :password
+  validates_presence_of :name
 end

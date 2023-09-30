@@ -4,7 +4,7 @@ RSpec.describe Category, type: :model do
   let(:user) { User.create(name: 'John', email: 'john@test.com', password: '1234test') }
 
   subject do
-    Category.create(user: user, name: 'Food', icon: 'https://unsplash.com/photos/USAT3jVsYIc')
+    Category.create(user:, name: 'Food', icon: 'https://unsplash.com/photos/USAT3jVsYIc')
   end
 
   context '#validation' do

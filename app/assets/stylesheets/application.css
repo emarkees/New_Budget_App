@@ -13,17 +13,19 @@
  *= require_tree .
  *= require_self
  */
- /* app/assets/stylesheets/application.css */
-  
+
+/* app/assets/stylesheets/application.css */
 
 
-    /* application.scss */
-  @import "font-awesome-sprockets";
-  @import "font-awesome";
 
- /* Custom CSS for the navbar */
- body .main-cont {
-    width: 100%;
+/* application.scss */
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+/* Custom CSS for the navbar */
+body .main-cont {
+  width: 100%;
+  height: max-content;
   background-color: #3778c2 !important;
 }
 
@@ -35,7 +37,6 @@
   background-color: transparent; /* Change color when the menu is open */
 }
 
-
 .back-arrow {
   font-size: 24px; /* Set the font size */
   margin-right: 8px; /* Add margin to separate it from the text */
@@ -45,12 +46,17 @@
 body {
   background-color: #f2f2f2; /* Light gray background color */
 }
-    /* Add this to your CSS */
+
+/* Add this to your CSS */
 .category-list {
-  max-height: 450px; /* Adjust the height as needed */
+  max-height: 350px; /* Adjust the height as needed */
   overflow-y: auto;
   color: #fcfdfe;
 }
+
+/* #transactions {
+  max-height: 450px;
+} */
 
 /* Add this to your application.css or application.scss file */
 .category-card {
@@ -93,63 +99,62 @@ h6 {
   display: none;
   width: 100%;
 }
-  /* Add a class to style the expanded menu */
-  .menu-expanded {
-    display: block;/* Show the expanded menu */
-  }
 
-  .navbar-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: #3778c2;
-    width: 75%;
-    height: 100%;
-    z-index: 999
-  }
+/* Add a class to style the expanded menu */
+.menu-expanded {
+  display: block;/* Show the expanded menu */
+}
 
-  .nav {
-    height: 5rem;
-    background: #3778c2;
-    width: 100%;
-  }
+.navbar-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #3778c2;
+  width: 75%;
+  height: 100%;
+  z-index: 999;
+}
 
-  ul,
-  li {
-    list-style-type: none;
-    width: 100%;
-    padding: 0;
-  }
+.nav {
+  display: flex;
+  height: 5rem;
+  background: #3778c2;
+  width: 100%;
+}
 
-  .icon {
-    width: 100%;
-  }
+ul,
+li {
+  list-style-type: none;
+  width: 100%;
+  padding: 0;
+}
 
-  .nav-item,
-   .nav-link {
-    width: 100%;
-    color: #fff;
+.icon {
+  width: 100%;
+}
 
-  }
+.nav-item,
+.nav-link {
+  width: 100%;
+  color: #fff;
+}
 
-  nav {
-    height: 100%;
-  }
+nav {
+  height: 100%;
+}
 
-  .close-icon {
-    position: absolute;
-    top: 10px;
-    right: 100px;
-    font-size: 24px;
-    color: white;
-    cursor: pointer;
-    z-index: 999;
-  }
+.close-icon {
+  position: absolute;
+  top: 10px;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  z-index: 999;
+  right: 1rem;
+}
 
+/* @media only screen and (min-width: 600px) {
 
-
-  /* @media only screen and (min-width: 600px) {
-    
     body {
       height: 100%;
     }
@@ -182,7 +187,7 @@ h6 {
 
     .overlay {
       display: none;
-    
+
     }
 
     #navbar-toggler-button {
@@ -197,14 +202,14 @@ h6 {
       padding: 0;
     }
 
-  
+
 
     .category-list {
       display: flex;
       flex-direction: column;
       width: 100%;
-      max-height: 400px; /* Adjust the height as needed 
-    
+      max-height: 400px; /* Adjust the height as needed
+
 
     .avatar-img {
       width: 1rem;

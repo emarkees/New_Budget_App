@@ -27,6 +27,5 @@ RSpec.describe User, type: :model do
       subject.password = nil
       expect(subject).to_not be_valid
     end
-
   end
 end
