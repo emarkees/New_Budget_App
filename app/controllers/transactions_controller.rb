@@ -27,9 +27,8 @@ class TransactionsController < ApplicationController
 
   # POST /transactions or /transactions.json
   def create
-    @category = Category.find(transaction_params[:category_id]) # Load the category based on the submitted category_id
-    @transaction = @category.transactions.build(transaction_params)
-    @transaction.user = current_user
+    @category = Category.find_by(id: transaction_params[:category_id]) # Load the category based on the submitted category_id
+    @transaction = current_user.transactions.build(transaction_params)
     
     if @transaction.save
       # Assuming @transaction has a category_id that you want to use
@@ -41,7 +40,6 @@ class TransactionsController < ApplicationController
       end
     end
   end
-  
 
   # PATCH/PUT /transactions/1 or /transactions/1.json
   def update
