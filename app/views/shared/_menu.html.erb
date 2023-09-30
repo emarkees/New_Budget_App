@@ -1,4 +1,4 @@
-<main class="container bg-black mai-cont">
+<main class="container bg-black mai-cont p-0">
   <nav class="navbar navbar-expand-lg navbar-light m-0 p-0">
     <div class="container nav p-0">
       <button
@@ -11,47 +11,46 @@
       </button>
 
       <!-- Arrow button -->
-      <h3 class="navbar-brand text-white"><%= @page_name %></h3>
+      <h3 class="navbar-brand text-white m-0 p-0"><%= @page_name %></h3>
       <a href="javascript:history.back();" class="back-arrow d-lg-none">
         <i class="fas fa-arrow-left"></i>
       </a>
+    </div>
 
+    <div class="collapse navbar-collapse justify-content-start " id="navbarNav">
+      <!-- Your navigation links -->
       <!-- Add the overlay element -->
-      <div class="overlay" id="overlay"></div>
-
-      <div class="collapse navbar-collapse justify-content-between " id="navbarNav">
-      
-        <!-- Your navigation links -->
-        <div class=" navbar-nav ml-auto p-0  row d-flex justify-content-start align-items-center">
-          <div class="row align-items-center justify-items-center">
+      <div class="overlay" id="overlay">
+        <!-- Close (X) icon -->
+        <i class="fas fa-times close-icon" id="close-icon"></i>
+      </div>
+      <div class=" navbar-nav ml-auto p-0  row d-flex justify-content-start align-items-center">
+        <div class="row align-items-center justify-items-center">
           <!-- Add Font Awesome avatar image -->
           <i class="fas fa-user-circle fa-6x text-primary mt-3 ml-auto p-0"></i>
           <%= user.name %>
-          </div>
-          <ul class="">
-                       
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Account Settings</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Category</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Transaction</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Contact</a>
-            </li>
-            
-          </ul>
         </div>
-          <li class="nav-itm">
-              <!-- Logout button -->
-              <%= form_tag(destroy_user_session_path, method: :delete) do %>
-                <%= submit_tag('Log Off', class: 'btn btn-danger') %>
-              <% end %>
-            </li>
-        </div>
+        <ul class="">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Account Settings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Category</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Transaction</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <li class="nav-itm">
+        <!-- Logout button -->
+        <%= form_tag(destroy_user_session_path, method: :delete) do %>
+          <%= submit_tag('Log Off', class: 'btn btn-danger') %>
+        <% end %>
+      </li>
     </div>
   </nav>
 </main>

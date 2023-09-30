@@ -6,3 +6,8 @@
     const overlay = document.getElementById('overlay');
     overlay.classList.toggle('menu-expanded');
   });
+
+  document.getElementById('close-icon').addEventListener('click', () => {
+    const overlay = document.getElementById('overlay');
+    overlay.classList.remove('menu-expanded');
+  });
