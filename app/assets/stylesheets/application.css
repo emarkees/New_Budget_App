@@ -13,3 +13,162 @@
  *= require_tree .
  *= require_self
  */
+
+/* app/assets/stylesheets/application.css */
+
+/* application.scss */
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+/* Custom CSS for the navbar */
+body .main-cont {
+  width: 100%;
+  height: max-content;
+  background-color: #3778c2 !important;
+}
+
+.navbar-toggler-icon {
+  background-color: #fff; /* Hamburger button color */
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  background-color: transparent; /* Change color when the menu is open */
+}
+
+.back-arrow {
+  font-size: 24px; /* Set the font size */
+  margin-right: 8px; /* Add margin to separate it from the text */
+}
+
+/* Add this to your application.css or application.scss file */
+body {
+  background-color: #f2f2f2; /* Light gray background color */
+}
+
+/* Add this to your CSS */
+.category-list {
+  max-height: 350px; /* Adjust the height as needed */
+  overflow-y: auto;
+  color: #fcfdfe;
+}
+
+/* #transactions {
+  max-height: 450px;
+} */
+
+/* Add this to your application.css or application.scss file */
+.category-card {
+  background-color: #fff; /* White background color */
+  border-radius: 10px; /* Rounded corners */
+  padding: 15px; /* Add padding to the card content */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+}
+
+.category-name {
+  color: gray !important; /* Set the link color to gray */
+}
+
+.category-amount {
+  color: #000;
+}
+
+/* Optional: Add hover effect when users hover over the cards */
+.category-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-decoration: none;
+}
+
+.fixed-height-container {
+  height: 400px; /* Adjust the height as needed */
+  overflow-y: auto; /* Add scrollbars if content overflows */
+}
+
+.navbarNav {
+  display: none;
+  width: 100%;
+}
+
+/* Add a class to style the expanded menu */
+.menu-expanded {
+  display: block;/* Show the expanded menu */
+}
+
+.navbar-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #3778c2;
+  width: 75%;
+  height: 100%;
+  z-index: 999;
+}
+
+.nav {
+  display: flex;
+  height: 5rem;
+  background: #3778c2;
+  width: 100%;
+}
+
+.border-btn {
+  color: #9d9b9b;
+}
+
+.btn-block {
+  width: 18rem;
+  margin-top: 8rem;
+}
+
+ul,
+li {
+  list-style-type: none;
+  width: 100%;
+  padding: 0;
+}
+
+.icon {
+  width: 100%;
+}
+
+.nav-item,
+.nav-link {
+  width: 100%;
+  color: #fff;
+}
+
+nav {
+  height: 100%;
+}
+
+.text-blue {
+  color: #000;
+}
+
+.sign_up_btn,
+.log_ig_btn {
+  width: 100%;
+}
+
+.close-icon {
+  position: absolute;
+  top: 10px;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  z-index: 999;
+  right: 1rem;
+}
+
+.category-button {
+  background: #5fb523;
+}
