@@ -112,7 +112,7 @@ https://BYDGET APP-service.onrender.com/
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live site](https://BUDGET APP-service.onrender.com/)
+- [Live site](https://budget-service-foxy.onrender.com)
 
 ## 🤝 Contributing <a name="contributing"></a>
 
