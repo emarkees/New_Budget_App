@@ -25,8 +25,6 @@
 
 **BYDGET APP** is a a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
 
-- [Live demo](https://www.loom.com/share/7cf8bcb459b041f487a65557c0347a58?sid=a35d77f7-81d1-4e8c-85bd-b95cb29ed9d4)
-
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -113,6 +111,8 @@ Then, run the following command to start the app
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live site](https://budget-service-foxy.onrender.com)
+
+- [video presentation](https://www.loom.com/share/7cf8bcb459b041f487a65557c0347a58?sid=a35d77f7-81d1-4e8c-85bd-b95cb29ed9d4)
 
 ## 🤝 Contributing <a name="contributing"></a>
 
