@@ -33,12 +33,8 @@
   </div>
 </div>
 
-<div class="d-flex container-fluid fixed-bottom">
-  <div class="d-flex col justify-content-center align-items-center">
-    <div class="col-md-1 mb-2 justify-content-center align-items-center w-100 h-50">
-      <%= link_to new_category_path, class: 'btn btn-success text-white btn-block w-100 p-2' do %>
-        New category
-      <% end %>
+<div class="fixed-bottom bottom-0 w-100">
+    <div class="container-fluid actions bg-green">
+      <%= link_to 'Add Category', new_category_path, class: " category-button w-100 btn btn-md btn-success bg-green mt-3 mb-3" %>
     </div>
   </div>
-</div>

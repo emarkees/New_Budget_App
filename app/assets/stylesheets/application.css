@@ -20,6 +20,9 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
+body {
+  background: #fff;
+}
 /* Custom CSS for the navbar */
 body .main-cont {
   width: 100%;
@@ -141,6 +144,15 @@ nav {
   height: 100%;
 }
 
+.text-blue {
+  color: #000;
+}
+
+.sign_up_btn,
+.log_ig_btn {
+  width: 100%;
+}
+
 .close-icon {
   position: absolute;
   top: 10px;
@@ -149,4 +161,11 @@ nav {
   cursor: pointer;
   z-index: 999;
   right: 1rem;
+}
+
+
+
+
+.category-button {
+  background: #5fb523;
 }

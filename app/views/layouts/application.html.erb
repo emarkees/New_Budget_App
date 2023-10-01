@@ -14,7 +14,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
   <div>
-    <% if controller_name == 'categories' || controller_name == 'transactions' %>
+    <% if controller_name == 'categories' || controller_name == 'transactions' || controller_name == 'devise' %>
     <%= render 'shared/menu', user: current_user %>
     <% end %>
   </div>
