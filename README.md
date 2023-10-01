@@ -21,7 +21,7 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 [BYDGET APP] <a name="about-project"></a>
+# 📖 [BUDGET APP] <a name="about-project"></a>
 
 **BYDGET APP** is a a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
 
@@ -73,7 +73,14 @@ Open the project on your code editor
 Change directory to the project folder
 
 ```sh
-  cd BYDGET APP
+  cd BUDGET APP
+```
+
+### Install
+Then, run the following command to install all dependecies
+
+```sh
+    bundle install
 ```
 
 ### Usage
@@ -88,8 +95,8 @@ Then, run the following command to start the app
 
 👤 **Adeyemi Olusola**
 
-- GitHub: [@abiola-arobieke](https://github.com/emarkees)
-- Linkedin: [@abiola-arobieke](https://linkedin.com/in/adeyemi-olusola)
+- GitHub: [@adeyemi](https://github.com/emarkees)
+- Linkedin: [@adeyemi](https://linkedin.com/in/adeyemi-olusola)
 
 https://BYDGET APP-service.onrender.com/
 
@@ -105,13 +112,13 @@ https://BYDGET APP-service.onrender.com/
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live site](https://BYDGET APP-service.onrender.com/)
+- [Live site](https://BUDGET APP-service.onrender.com/)
 
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/abiola-arobieke/BYDGET APP/issues).
+Feel free to check the [issues page](https://github.com/emarkees/BUDGET APP/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
